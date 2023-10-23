@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import logo from '../../assets/image/swos.jpg'
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../features/AuthProvider';
+
 
 
 const Navbar = () => {
@@ -26,14 +26,12 @@ const Navbar = () => {
                         <li> <Link to='/abouts'>About</Link></li>
                         <li> <Link to='/allprogram'>All Programs</Link></li>
                         {
-                            admin === 'true' && <>
+                            admin === 'true' ? <>
                                 <li> <Link to='/dashboard'>DashBoard</Link></li>
                                 <li onClick={handleLogOut} className='mt-[7px] cursor-pointer hover:bg-[#e29393] px-[6px] rounded-[4px]'>Log Out</li>
-                            </>}
-                        {
-
-                            admin === 'false' &&
-                            <li> <Link to='/login'>Login</Link></li>
+                            </>
+                                :
+                                <li> <Link to='/login'>Login</Link></li>
 
                         }
 

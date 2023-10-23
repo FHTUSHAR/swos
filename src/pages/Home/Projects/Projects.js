@@ -13,28 +13,28 @@ const Projects = () => {
         {
             id: 2,
             img: swos,
-            program: 'Manobik Siadpur'
+            program: 'Chatro Kollan'
 
         },
         {
             id: 3,
             img: swos,
-            program: 'Manobik Siadpur'
+            program: 'Blood Donation'
         },
         {
             id: 4,
             img: swos,
-            program: 'Manobik Siadpur'
+            program: 'Nari Kollan'
         },
         {
             id: 5,
             img: swos,
-            program: 'Manobik Siadpur'
+            program: 'ICT'
         },
         {
             id: 6,
             img: swos,
-            program: 'Manobik Siadpur'
+            program: 'Potho Sishu Bivag'
         },
 
 

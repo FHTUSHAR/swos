@@ -37,7 +37,7 @@ const SearchBlood = () => {
                                             <div>
                                                 <h1>Name: {bdata.name}</h1>
                                                 <h1>Address: {bdata.address}</h1>
-                                                <h1>Address: {bdata.phone}</h1>
+                                                <h1>Phone: {bdata.phone}</h1>
                                             </div>
                                         </div>
                                     </div>
@@ -55,7 +55,7 @@ const SearchBlood = () => {
                                                 <div>
                                                     <h1>Name: {bdata.name}</h1>
                                                     <h1>Address: {bdata.address}</h1>
-                                                    <h1>Address: {bdata.phone}</h1>
+                                                    <h1>Phone: {bdata.phone}</h1>
                                                 </div>
                                             </div>
                                         </div>

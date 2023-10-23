@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import banner1 from '../../../assets/image/Brown Modern Charity Care Banner.png'
+import banner2 from '../../../assets/image/Brown Modern Charity Care Banner.png'
 const Banner = () => {
     const [banner, setBanner] = useState([])
 
@@ -16,12 +16,10 @@ const Banner = () => {
     return (
         <div>
             {
-                banner ? <>
-                    <img src={banner} alt='banner' className='w-full' />
-                </> :
-                    <>
-                        <img src={banner1} alt='banner' />
-                    </>
+                banner ? <img src={banner} alt='banners' className='w-full' />
+                    :
+                    <img src={banner2} alt='banner' className='w-full' />
+
             }
         </div>
     );
