@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 const AllProgram = () => {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/api/upcoming')
+        fetch('https://swos-server.vercel.app/api/upcoming')
             .then(res => res.json())
             .then(data => {
                 setData(data.reverse())

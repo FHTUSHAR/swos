@@ -7,7 +7,7 @@ const UpcommingProgram = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/upcoming')
+        fetch('https://swos-server.vercel.app/api/upcoming')
             .then(res => res.json())
             .then(data => {
                 setData(data[data.length - 1])

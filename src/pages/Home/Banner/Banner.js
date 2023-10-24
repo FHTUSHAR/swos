@@ -4,7 +4,7 @@ const Banner = () => {
     const [banner, setBanner] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/banner/banner')
+        fetch('https://swos-server.vercel.app/api/banner/banner')
             .then(res => res.json())
             .then(data => {
                 setBanner(data.image)
@@ -16,10 +16,11 @@ const Banner = () => {
     return (
         <div>
             {
-                banner ? <img src={banner} alt='banners' className='w-full' />
-                    :
-                    <img src={banner2} alt='banner' className='w-full' />
+                banner && <img src={banner} alt='banners' className='w-full' />
 
+            }
+            {
+                !banner && <img src={banner2} alt='banner' className='w-full' />
             }
         </div>
     );

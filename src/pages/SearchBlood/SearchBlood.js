@@ -4,7 +4,7 @@ const SearchBlood = () => {
     const [bloodData, setBloodData] = useState()
     const [selectedBlood, setSelectedBlood] = useState()
     useEffect(() => {
-        fetch('http://localhost:5000/api/getBlood/allBlood')
+        fetch('https://swos-server.vercel.app/api/getBlood/allBlood')
             .then(res => res.json())
             .then(data => {
                 setBloodData(data.data)

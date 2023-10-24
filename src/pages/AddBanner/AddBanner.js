@@ -27,7 +27,7 @@ const AddBanner = () => {
 
         console.log(formData)
         try {
-            await axios.post('http://localhost:5000/api/banner/postBanner', formData, {
+            await axios.post('https://swos-server.vercel.app/api/banner/postBanner', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

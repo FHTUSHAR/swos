@@ -22,7 +22,7 @@ const Login = () => {
         const password = form.password.value;
 
 
-        fetch(`http://localhost:5000/api/admin/allAdmin?name=${name}&&pass=${password}`)
+        fetch(`https://swos-server.vercel.app/api/admin/allAdmin?name=${name}&&pass=${password}`)
             .then(res => res.json())
             .then(data => {
                 gettingAdmin(data)

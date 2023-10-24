@@ -18,7 +18,7 @@ const AddDonar = () => {
             address
         }
 
-        fetch('http://localhost:5000/api/postBlood', {
+        fetch('https://swos-server.vercel.app/api/postBlood', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
