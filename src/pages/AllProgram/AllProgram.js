@@ -20,7 +20,7 @@ const AllProgram = () => {
                 {
                     data?.map(pgr => (
                         <div key={pgr.id}>
-                            <div className="card w-[380px] bg-base-100 shadow-xl mb-[20px]">
+                            <div className="card w-[363px] bg-base-100 shadow-xl mb-[20px]">
                                 <figure><img src={pgr?.image} alt="Shoes" /></figure>
                                 <div className="card-body ">
                                     <h2 className="card-title">{pgr?.title}!</h2>

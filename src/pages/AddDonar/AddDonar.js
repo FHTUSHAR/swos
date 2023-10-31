@@ -39,11 +39,11 @@ const AddDonar = () => {
             <h1 className='text-center text-[18px] mb-[16px] mt-[8px]'><span className='shadow-lg px-[10px] py-[10px]'>Type Donar's Details</span></h1>
             <div className='text-center'>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none mt-[16px]' placeholder='Name' name='name' /><br />
-                    <input type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none' placeholder='Address' name='address' /><br />
-                    <input type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none' placeholder='Blood group O+' name='group' /><br />
-                    <input type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none' placeholder='Phone' name='phone' /><br />
-                    <input type="submit" className='btn  w-[120px] mt-[16px] mb-[115px]' placeholder='Add Donar' value='Add Donar' />
+                    <input required type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none mt-[16px]' placeholder='Name' name='name' /><br />
+                    <input required type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none' placeholder='Address' name='address' /><br />
+                    <input required type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none' placeholder='Blood group O+' name='group' /><br />
+                    <input required type="text" className='input input-bordered input-primary md:w-[330px] w-[292px] h-[36px] mb-[8px] focus:outline-none' placeholder='Phone' name='phone' /><br />
+                    <input required type="submit" className='btn  w-[120px] mt-[16px] mb-[115px]' placeholder='Add Donar' value='Add Donar' />
                 </form>
             </div>
             <Toaster

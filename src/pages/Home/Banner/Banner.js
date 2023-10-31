@@ -12,15 +12,14 @@ const Banner = () => {
     }, [])
     console.log(banner)
 
-
+    if (!banner) {
+        <span className="loading loading-infinity loading-lg"></span>
+    }
     return (
         <div>
             {
                 banner && <img src={banner} alt='banners' className='w-full' />
 
-            }
-            {
-                !banner && <img src={banner2} alt='banner' className='w-full' />
             }
         </div>
     );
